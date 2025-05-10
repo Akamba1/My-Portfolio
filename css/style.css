@@ -249,3 +249,22 @@ body {
   font-size: 0.9rem;
   color: #aaa;
 }
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #00bcd4;
+}
