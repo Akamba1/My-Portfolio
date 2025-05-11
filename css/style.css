@@ -32,7 +32,7 @@ body {
   color: #ccc;
 }
 .hero .btn:hover {
-  background-color: #ff7b00; /* Accent color */
+  background-color: #ff7b00;
   color: #fff;
 }
 
@@ -101,15 +101,25 @@ body {
   padding: 4rem 2rem;
 }
 
+#portfolio h2 {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
 .portfolio-items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center; 
   gap: 2rem;
+  flex-wrap: wrap; 
+  align-items: center; 
 }
 
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 300px; 
 }
 
 .portfolio-item img {
@@ -121,6 +131,7 @@ body {
 .portfolio-item:hover img {
   transform: scale(1.1);
 }
+
 
 .overlay {
   position: absolute;
@@ -148,7 +159,7 @@ body {
 }
 
 .contact-section {
-  background-color: #0f0f0f; /* match your dark theme */
+  background-color: #0f0f0f; 
   color: #fff;
   padding: 6rem 2rem;
   text-align: center;
